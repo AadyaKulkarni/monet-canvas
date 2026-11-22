@@ -44,3 +44,9 @@ figcaption { margin-top: 0.4rem; font-size: 0.85rem; opacity: 0.7; }
   touch-action: none; /* stops the page scrolling while you draw on a phone */
   cursor: crosshair;
 }
+#runtime-status {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  white-space: pre-wrap;
+}

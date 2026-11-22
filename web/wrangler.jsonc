@@ -1,0 +1,5 @@
+{
+  "name": "monet-canvas",
+  "compatibility_date": "2026-11-17",
+  "assets": { "directory": "./dist" }
+}

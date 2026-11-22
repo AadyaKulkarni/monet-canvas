@@ -1,7 +1,6 @@
 import './style.css'
+import { PlaceholderRenderer } from './engine/renderer'
+import { mountApp } from './ui/app'
 
-const app = document.querySelector<HTMLDivElement>('#app')!
-app.innerHTML = `
-  <h1>Monet Canvas</h1>
-  <p>Under construction.</p>
-`
+const root = document.querySelector<HTMLDivElement>('#app')!
+mountApp(root, new PlaceholderRenderer()).catch(console.error)

@@ -1,5 +1,46 @@
+:root { color-scheme: light dark; }
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 1.5rem;
   font-family: system-ui, sans-serif;
+}
+h1 { margin: 0 0 0.25rem; }
+.tag { margin: 0 0 1rem; opacity: 0.7; }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.swatches { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+.swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+  padding: 0;
+}
+.swatch.active { outline: 3px solid #2f6fdf; outline-offset: 2px; }
+.size { display: flex; align-items: center; gap: 0.5rem; }
+button { font: inherit; padding: 0.35rem 0.8rem; cursor: pointer; }
+
+.panes { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+figure { margin: 0; }
+figcaption { margin-top: 0.4rem; font-size: 0.85rem; opacity: 0.7; }
+
+.draw-canvas, #out {
+  width: min(88vw, 384px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 6px;
+  background: #fff;
+  display: block;
+}
+.draw-canvas {
+  touch-action: none; /* stops the page scrolling while you draw on a phone */
+  cursor: crosshair;
 }

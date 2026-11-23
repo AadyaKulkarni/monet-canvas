@@ -1,0 +1,13 @@
+[33mcommit 813baa840a5d8c9ba02502af785bf988d0c9b2c1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: AadyaKulkarni <adku1204@gmail.com>
+Date:   Mon Nov 23 02:57:09 2026 +0530
+
+    Add ONNX runtime smoke test
+
+ package-lock.json            | 151 [32m+++++++++++++++++++++++++++++++++++++++++++[m
+ package.json                 |   5 [32m++[m
+ web/src/engine/smoke-test.ts |  53 [32m+++++++++++++++[m
+ web/src/main.ts              |  20 [32m+++++[m[31m-[m
+ web/src/style.css            |   6 [32m++[m
+ web/vite.config.ts           |   8 [32m+++[m
+ 6 files changed, 242 insertions(+), 1 deletion(-)
